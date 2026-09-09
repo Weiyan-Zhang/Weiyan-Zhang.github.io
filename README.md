@@ -1,2 +1,5 @@
-# weiyanzhang.github.io
-Personal Website: https://weiyan-zhang.github.io/
+# Weiyan Zhang — Personal Website
+
+Personal website of Weiyan Zhang.
+
+🌐 https://weiyanzhang.com
