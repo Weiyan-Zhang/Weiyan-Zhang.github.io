@@ -55,7 +55,31 @@
 
 </head>
 
-<body id="top">
+<!-- back to top -->
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+  ↑
+</button>
+
+<script>
+  const backToTop = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+<body>
 
   <!-- Header -->
   <header>
@@ -148,8 +172,6 @@
     <p>© 2026 Weiyan Zhang</p>
 
   </footer>
-
-  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
 
   <!-- Cloudflare Web Analytics -->
   <script type='module'
