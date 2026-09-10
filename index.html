@@ -55,30 +55,6 @@
 
 </head>
 
-<!-- back to top -->
-<button id="back-to-top" class="back-to-top" aria-label="Back to top">
-  ↑
-</button>
-
-<script>
-  const backToTop = document.getElementById("back-to-top");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      backToTop.classList.add("show");
-    } else {
-      backToTop.classList.remove("show");
-    }
-  });
-
-  backToTop.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-</script>
-
 <body>
 
   <!-- Header -->
@@ -173,9 +149,33 @@
 
   </footer>
 
+  <!-- back to top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script>
+    const backToTop = document.getElementById("back-to-top");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+     } else {
+        backToTop.classList.remove("show");
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
   <!-- Cloudflare Web Analytics -->
   <script type='module'
-      rc='https://static.cloudflareinsights.com/beacon.min.js'
+      src='https://static.cloudflareinsights.com/beacon.min.js'
       data-cf-beacon='{"token": "9f39e42576f645569f5c35de5d0b8ecb"}'>
   </script>
 <!-- End Cloudflare Web Analytics -->
